@@ -36,6 +36,19 @@ while (contador <10);
         foreach(string nome in listaNomes)
         Console.WriteLine($"O nome da lista é: {nome}");
         
+//tratamento de excessão.
+try
+{
+   Console.WriteLine("Digite um número qualquer.");
+         int numero = Convert.ToInt32(Console.ReadLine());
+ 
+}
+catch (Exception ex)
+{
+
+    Console.WriteLine($"Erro: {ex.Message}");
+} 
+
  
  
         }
